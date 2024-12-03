@@ -13,7 +13,7 @@ app.use('/sessions', sessionRoutes);
 
 // Database Connection
 mongoose
-  .connect('mongodb://localhost:27017/sessionManager')
+  .connect('mongodb+srv://ishan:ishan@cluster0.htgkq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error(err));
 
